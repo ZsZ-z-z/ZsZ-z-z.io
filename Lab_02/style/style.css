@@ -1,0 +1,17 @@
+*{
+    margin 0;
+    padding: 0;
+    max-width: 1600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
