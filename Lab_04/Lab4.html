@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Forms</title>
+    </head>
+    <body bgcolor = "blucgre">
+	<form action="action_page.php">
+          <div class="container">
+                <label for="uname"><b>Ім'я</b></label>
+                <input type="text" placeholder="Введіть ім'я" name="uname" required>
+
+                <br><label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                <br><button type="submit">Увійти</button>
+                <label>
+              <br><input type="checkbox" checked="checked" name="remember"> Запам'ятати мене
+            </label>
+          </div>
+              <div class="container" style="background-color:#blucgre">
+                <button type="button" class="cancelbtn">Відмінити</button>
+                <span class="psw">Забули <a href="#">пароль?</a></span>
+          </div>
+        </form>
+        <br><form>
+               <div class="container">
+                <label for="uname"><b>Ім'я</b></label>
+                <input type="text" placeholder="Введіть ім'я" name="uname" required>
+
+                <br><label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Введіть пошту" name="email" required>
+                <p>Додайте коментар</p><textarea cols ="50" required rows ="5" name="text"></textarea>
+                <p><input type="submit" value="Відправити"></p>
+          </div>
+          </form>
+          <br><form enctype="multipart/form-data" method="post">
+          <div class="container">
+          <p><label for="uname"><b>Прізвище</b></label>
+                <input type="text" placeholder="Введіть Прізвище" name="uname" required></p>
+                <p><label for="uname"><b>Ім'я</b></label>
+                <input type="text" placeholder="Введіть ім'я" name="uname" required></p>
+                <p><label for="uname"><b>По батькові</b></label>
+                <input type="text" placeholder="По батькові" name="uname" required></p>
+                    <p><b>Стать:</b></p>
+                    <p><input name="ch" type="radio" value="ch"> Ч
+                    <input name="cj" type="radio" value="cj"> Ж</p>
+            <p>
+                <label for="localdate">Дата народження: </label>
+                <input type="datetime-local" id="localdate" name="date"/>
+            </p>
+            <p><b>На якому курсі ви навчаєтесь:</b></p>
+                <p><input name="00" type="radio" value="00"> 1
+                <input name="01" type="radio" value="01"> 2
+                <input name="02" type="radio" value="02"> 3
+                <input name="03" type="radio" value="03"> 4</p>
+        <b><p>Відділення:</p></b>
+         <select>
+          <option>Системна інженерія</option>
+          <option>Компютерно інтегровані технології</option>
+          <option>Телекомунікації</option>
+        </select>
+        <b><p>Спеціальність:</p></b>
+         <select>
+          <option>Обслуговування техніки</option>
+          <option>Програмне забеспечення</option>
+          <option>Телекомунікації</option>
+        </select>
+        <p>Email: <input type="email" name="login"></p>
+        <p>Телефон у форматі +380xxxx-xxx:  <input type="tel" name="tel" pattern="+380[0-9]{3}-[0-9]{3}"></p>
+               <p>Завантажте важе фото</p>
+               <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+               <p><input type="submit" value="Отправить">
+                  <input type="reset" value="Очистить"></p>
+              </form>
+	</body>
+</html>

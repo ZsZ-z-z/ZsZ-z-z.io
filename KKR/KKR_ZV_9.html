@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>KKR</title>
+    </head>
+    <body bgcolor = "blucgre">
+	<form>
+	    <p><b>Особисті дані</b></p>
+	    <div class="container">
+            <p><label for="pname"><b>Прізвище</b></label>
+                 <input type="text" placeholder="Введіть прізвище" name="pname" required></p>
+            <p><label for="uname"><b>Ім'я</b></label>
+                 <input type="text" placeholder="Введіть ім'я" name="uname" required></p>
+            <p><b>Стать:</b></p>
+                    <p><input name="ch" type="radio" value="ch"> Ч
+                    <input name="cj" type="radio" value="cj"> Ж</p>
+            <p><label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Введіть пошту" name="email" required></p>
+            <p><b>Завантажте важе фото</b></p>
+                    <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+            <b><p>Місто проживання:</p></b>
+                     <select>
+                      <option>Івано-Франківськ</option>
+                      <option>Львів</option>
+                      <option>Тернопіль</option>
+                    </select>
+                       <p>Ваші захоплення:</p>
+                           <p><input type="checkbox" name="a" value="1"> Техніка</p>
+                           <p><input type="checkbox" name="a" value="2"> Спорт</p>
+                           <p><input type="checkbox" name="a" value="3"> Музика</p>
+                           <p><input type="checkbox" name="a" value="4"> Малювання</p>
+                           <p><input type="checkbox" name="a" value="5"> Комп'ютерний Геній</p>
+                            <p><input type="submit" value="Отправити">
+                        <input type="reset" value="Очистити"></p>
+	        </div>
+	    </form>
+	</body>
+</html>
